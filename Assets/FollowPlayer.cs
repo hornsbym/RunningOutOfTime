@@ -13,7 +13,7 @@ public class FollowPlayer : MonoBehaviour
     }
 
     void Update()
-    {
+    { 
         CalculateXOffset();
     }
 
@@ -22,8 +22,7 @@ public class FollowPlayer : MonoBehaviour
         Vector2 offset =  (Vector2) player.transform.position - playerPosition;
 
         //// Apply offset to camera position
-        transform.Translate(offset);
-        print(offset.x);
+        transform.Translate(new Vector2(offset.x, 0));
 
         playerPosition = player.transform.position;
     }
