@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 23dc574921e5ae34497e4d0d7958a363
+guid: e93ae716302f5454d8d17eabe1fab9ca
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,17 +119,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: viking_0
+      name: raptorPounce_0
       rect:
         serializedVersion: 2
-        x: 41
+        x: 109
         y: 0
-        width: 33
-        height: 46
+        width: 148
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3b1ad0fbfb226b4c88f6f06947f8d8b
-      internalID: -1089242248
+      spriteID: 14cecc30978153f42b9450a89545358d
+      internalID: -1742912825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viking_1
+      name: raptorPounce_1
       rect:
         serializedVersion: 2
-        x: 157
+        x: 493
         y: 0
-        width: 33
-        height: 46
+        width: 148
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f1f8ddbbf913c34dbb0b33e10219624
-      internalID: 1902382358
+      spriteID: 87dd214c71088634dbbf4e4bb49fd7a2
+      internalID: 369812397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viking_2
+      name: raptorPounce_2
       rect:
         serializedVersion: 2
-        x: 272
+        x: 901
         y: 0
-        width: 34
-        height: 46
+        width: 118
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41f9cabf4d5f5dd4e8ae20ebe494256a
-      internalID: 1718726856
+      spriteID: a9aeb308df611d0418a0629da7a47017
+      internalID: -1307309696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viking_3
+      name: raptorPounce_3
       rect:
         serializedVersion: 2
-        x: 387
+        x: 1261
         y: 0
-        width: 34
-        height: 45
+        width: 148
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f94b532fd7ff6443b6f42e9b422198c
-      internalID: -696708922
+      spriteID: a93bc405e2c8fce46bf61f02c4b5c0d8
+      internalID: 1965595262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viking_4
+      name: raptorPounce_4
       rect:
         serializedVersion: 2
-        x: 502
+        x: 1645
         y: 0
-        width: 34
-        height: 44
+        width: 148
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6e4c29dbce090c4fadce05a44ace9e5
-      internalID: -657218480
+      spriteID: 6727db8aed9f25e44b3fb11fc2dd5dd1
+      internalID: -1504420568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viking_5
+      name: raptorPounce_5
       rect:
         serializedVersion: 2
-        x: 617
+        x: 2056
         y: 0
-        width: 34
-        height: 43
+        width: 121
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 967159a5355c0684faf8783884c96502
-      internalID: 1892217381
+      spriteID: f2221539fea2d694db9b3f20de39b6ac
+      internalID: -67278400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viking_6
+      name: raptorPounce_6
       rect:
         serializedVersion: 2
-        x: 732
+        x: 2440
         y: 0
-        width: 34
-        height: 44
+        width: 121
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 978590073ea58f740981c25bd497bd85
-      internalID: -2011673909
+      spriteID: ce88488343b2d474b9019c64af3463ab
+      internalID: 29389421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viking_7
+      name: raptorPounce_7
       rect:
         serializedVersion: 2
-        x: 847
+        x: 2824
         y: 0
-        width: 34
-        height: 45
+        width: 121
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,92 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a51bebc06a6731e418aee58e401b16b0
-      internalID: 1785484389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viking_8
-      rect:
-        serializedVersion: 2
-        x: 957
-        y: 0
-        width: 29
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 091d0bb80c1c56745baf9a56fd5446d1
-      internalID: 1744812286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viking_9
-      rect:
-        serializedVersion: 2
-        x: 1071
-        y: 0
-        width: 28
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43befe106101167458d3763800278535
-      internalID: -828838461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viking_10
-      rect:
-        serializedVersion: 2
-        x: 1187
-        y: 0
-        width: 36
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 661410db89d0277438bdbc4cccf82b93
-      internalID: 68916181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viking_11
-      rect:
-        serializedVersion: 2
-        x: 1306
-        y: 0
-        width: 33
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71419beed411fba4ba2ffcd88cf49b1f
-      internalID: 1478023177
+      spriteID: df24a1c056d31a64ab0868110f5b04f4
+      internalID: 1918287822
       vertices: []
       indices: 
       edges: []
@@ -385,18 +327,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      viking_0: -1089242248
-      viking_1: 1902382358
-      viking_10: 68916181
-      viking_11: 1478023177
-      viking_2: 1718726856
-      viking_3: -696708922
-      viking_4: -657218480
-      viking_5: 1892217381
-      viking_6: -2011673909
-      viking_7: 1785484389
-      viking_8: 1744812286
-      viking_9: -828838461
+      raptorPounce_0: -1742912825
+      raptorPounce_1: 369812397
+      raptorPounce_2: -1307309696
+      raptorPounce_3: 1965595262
+      raptorPounce_4: -1504420568
+      raptorPounce_5: -67278400
+      raptorPounce_6: 29389421
+      raptorPounce_7: 1918287822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
