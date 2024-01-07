@@ -22,7 +22,7 @@ public class Scorekeeper : MonoBehaviour
     }
     
     void Update() {
-        if (player != null) {
+        if (player.isGameStarted && player != null) {
             score += player.speed * scoreMultiplier * Time.deltaTime;
         }
     }

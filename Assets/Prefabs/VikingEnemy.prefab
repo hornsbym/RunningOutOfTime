@@ -76,7 +76,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 1072646288237857755}
   - component: {fileID: 8954841127350872035}
   - component: {fileID: 7477132210128650961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Viking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,10 +225,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 127
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
