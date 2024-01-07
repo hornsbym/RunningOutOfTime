@@ -60,14 +60,12 @@ public class CharacterMovement : MonoBehaviour
                     {
                         yield return new WaitForSeconds(delaySecs);
                         state = CharacterMovementStates.RUNNING;
-                        print("ROlling stopped");
                     }
-                    StartCoroutine(StopRolling(.65f));
+                    StartCoroutine(StopRolling(.5f));
                 }
             }
         }
         prevPos = transform.position;
-        print("State:" + state + ", " + (int)state);
         anim.SetInteger("state", (int)state);
     }
 
