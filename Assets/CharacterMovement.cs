@@ -12,6 +12,8 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     private Animator anim;
 
+    public AudioSource jumpSound;
+
     private Rigidbody2D rb;
 
     public CharacterMovementStates state;
@@ -48,6 +50,7 @@ public class CharacterMovement : MonoBehaviour
                 if (state == CharacterMovementStates.RUNNING)
                 {
                     rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+                    jumpSound.PlayOneShot(jumpSound.clip, 1f);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))

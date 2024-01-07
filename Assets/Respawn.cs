@@ -30,6 +30,8 @@ public class Respawn : MonoBehaviour
     [SerializeField]
     Animator anim;
 
+    public AudioSource loseLifeSound;
+
     void Start()
     {
         lives = 3;
@@ -46,6 +48,7 @@ public class Respawn : MonoBehaviour
 
     public void Die()
     {
+        loseLifeSound.PlayOneShot(loseLifeSound.clip, 1f);
         lives = Math.Clamp(lives - 1, 0, 3);
         if (lives > 0)
         {
