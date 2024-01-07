@@ -14,7 +14,10 @@ public class FollowPlayer : MonoBehaviour
 
     void Update()
     { 
-        CalculateXOffset();
+        if (player != null) 
+        {
+            CalculateXOffset();
+        }
     }
 
     void CalculateXOffset()

@@ -30,7 +30,6 @@ public class CharacterMovement : MonoBehaviour
         gameObject.transform.Translate(new Vector2(speed * Time.deltaTime, 0));
         Physics.SyncTransforms();
 
-        print(prevPos.y - transform.position.y);
         if ((prevPos - (Vector2)transform.position).y > 0.01)
         {
             // Falling
