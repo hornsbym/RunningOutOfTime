@@ -13,6 +13,9 @@ public class bgMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Translate(new Vector2((player.speed - speedOffset) * Time.deltaTime, 0));
+        print(player.speed);
+        if(player.speed > 0) {
+            gameObject.transform.Translate(new Vector2((player.speed - speedOffset) * Time.deltaTime, 0));
+        }
     }
 }
