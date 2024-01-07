@@ -1111,6 +1111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   jumpForce: 0
+  anim: {fileID: 0}
+  state: 0
 --- !u!4 &1742123164
 Transform:
   m_ObjectHideFlags: 0
@@ -1230,11 +1232,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 168254993}
-  - {fileID: 1200263456}
-  - {fileID: 353018201}
   - {fileID: 1742123164}
-  - {fileID: 80124041}
   - {fileID: 722719931}
+  - {fileID: 353018201}
+  - {fileID: 80124041}
+  - {fileID: 1200263456}
   - {fileID: 782871375}
   - {fileID: 1187799137989038102}
   - {fileID: 1244945649}
