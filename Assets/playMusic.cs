@@ -14,6 +14,7 @@ public class playMusic : MonoBehaviour
     public AudioSource Future;
     public AudioSource Samurai;
     public AudioSource BigCarTheft;
+    public AudioSource Void;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,12 +51,12 @@ public class playMusic : MonoBehaviour
                         break;
                     case 4:
                         StartCoroutine(AudioFadeScript.FadeOut(BigCarTheft, 0.8f));
-                        StartCoroutine(AudioFadeScript.FadeIn(Menu, 8f));
+                        StartCoroutine(AudioFadeScript.FadeIn(Void, 8f));
                         // BigCarTheft.Stop();
                         // Menu.Play();
                         break;
                     case 5:
-                        StartCoroutine(AudioFadeScript.FadeOut(Menu, 0.8f));
+                        StartCoroutine(AudioFadeScript.FadeOut(Void, 0.8f));
                         StartCoroutine(AudioFadeScript.FadeIn(BigCarTheft, 8f));
                         // Menu.Stop();
                         // Samurai.Play();
