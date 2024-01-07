@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     private Animator anim;
 
+    [SerializeField]
     private Rigidbody2D rb;
 
     public CharacterMovementStates state;
@@ -19,14 +21,34 @@ public class CharacterMovement : MonoBehaviour
     // Tracks rising/falling for sprite
     private Vector2 prevPos;
 
+    [field: SerializeField]
+    public bool isGameStarted {
+        get;
+        private set;
+    }
+
     void Start()
     {
-        state = CharacterMovementStates.RUNNING;
-        rb = GetComponent<Rigidbody2D>();
+        state = CharacterMovementStates.FALLING;
+        rb.isKinematic = true;
+        isGameStarted = false;
+    }
+
+    public void Begin()
+    {
+        print("Begin called");
+        isGameStarted = true;
+        rb.isKinematic = false;
     }
 
     void Update()
     {
+        if (!isGameStarted)
+        {
+            anim.SetInteger("state", (int) state);
+            return;
+        }
+
         gameObject.transform.Translate(new Vector2(speed * Time.deltaTime, 0));
         Physics.SyncTransforms();
 

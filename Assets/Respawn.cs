@@ -25,15 +25,38 @@ public class Respawn : MonoBehaviour
     }
 
     [SerializeField]
+    GameObject gameplayUI;
+
+    [SerializeField]
+    GameObject endGameUI;
+
+    [SerializeField]
+    GameObject startGameUI;
+
+    [SerializeField]
     Collider2D enemyCollisionDetector;
 
     [SerializeField]
     Animator anim;
 
+    [SerializeField]
+    CharacterMovement movement;
+
     void Start()
     {
         lives = 3;
         isInvincible = false;
+        startGameUI.SetActive(true);
+        gameplayUI.SetActive(false);
+        endGameUI.SetActive(false);
+    }
+
+    public void Begin()
+    {
+        movement.Begin();
+        startGameUI.SetActive(false);
+        gameplayUI.SetActive(true);
+        endGameUI.SetActive(false);
     }
 
     void Update()
@@ -54,6 +77,8 @@ public class Respawn : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            gameplayUI.SetActive(false);
+            endGameUI.SetActive(true);
         }
     }
 
@@ -66,7 +91,7 @@ public class Respawn : MonoBehaviour
         anim.SetBool("isInvincible", true);
         StartCoroutine(resetInvincibility(invincibilityDelay));
     }
-    
+
     IEnumerator resetInvincibility(float delay)
     {
         yield return new WaitForSeconds(delay);
