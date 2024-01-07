@@ -7,7 +7,6 @@ public class DetectEnemyCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log(col);
         playerRespawn.Die();
     }
 

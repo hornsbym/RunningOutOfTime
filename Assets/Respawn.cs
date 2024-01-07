@@ -77,6 +77,7 @@ public class Respawn : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            startGameUI.SetActive(false);
             gameplayUI.SetActive(false);
             endGameUI.SetActive(true);
         }
@@ -87,7 +88,7 @@ public class Respawn : MonoBehaviour
         Vector2 currentPosition = gameObject.transform.position;
         gameObject.transform.position = new Vector2(currentPosition.x, 10);
         isInvincible = true;
-        enemyCollisionDetector.gameObject.SetActive(false);
+        enemyCollisionDetector.enabled = false;
         anim.SetBool("isInvincible", true);
         StartCoroutine(resetInvincibility(invincibilityDelay));
     }
@@ -96,7 +97,7 @@ public class Respawn : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         isInvincible = false;
-        enemyCollisionDetector.gameObject.SetActive(true);
+        enemyCollisionDetector.enabled = true;
         anim.SetBool("isInvincible", false);
     }
 }
