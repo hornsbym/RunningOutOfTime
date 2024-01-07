@@ -11309,6 +11309,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5405699274738051480, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
+      propertyPath: enemyCollisionDetector
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8505381856201981097, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -11397,6 +11401,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101e81c8457c1594aa0a0afb01781aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <isInvincible>k__BackingField: 0
+  <invincibilityDelay>k__BackingField: 0
+  enemyCollisionDetector: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!4 &2018791406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 282705213042229549, guid: ab4e0da57db3dcb43a680bf4af909347, type: 3}
