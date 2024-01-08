@@ -25,6 +25,10 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     Collider2D rollingEnemyDetectHitbox;
 
+    [SerializeField]
+    Respawn respawn;
+
+
     public CharacterMovementStates state;
 
     // Tracks rising/falling for sprite
@@ -98,15 +102,19 @@ public class CharacterMovement : MonoBehaviour
             }
         }
 
-        if (state == CharacterMovementStates.ROLLING)
+        if (!respawn.isInvincible) 
         {
-            rollingEnemyDetectHitbox.enabled = true;
-            runningEnemyDetectHitbox.enabled = false;
-        }
-        else
-        {
-            rollingEnemyDetectHitbox.enabled = false;
-            runningEnemyDetectHitbox.enabled = true;
+            if (state == CharacterMovementStates.ROLLING)
+            {
+                rollingEnemyDetectHitbox.enabled = true;
+                runningEnemyDetectHitbox.enabled = false;
+            }
+            else
+            {
+                rollingEnemyDetectHitbox.enabled = false;
+                runningEnemyDetectHitbox.enabled = true;
+            }
+
         }
 
         prevPos = transform.position;
