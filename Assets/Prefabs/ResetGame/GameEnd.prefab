@@ -94,3 +94,4 @@ MonoBehaviour:
   background: {fileID: 0}
   playerRestartSpot: {fileID: 0}
   bgRestartSpot: {fileID: 0}
+  newGameSpeedBoostAmount: 1
