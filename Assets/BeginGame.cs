@@ -5,11 +5,16 @@ public class BeginGame : MonoBehaviour
 {
     [SerializeField]
     Respawn player;
+    [SerializeField]
+    playMusic Music;
 
     public void Update()
     {
         if (Input.anyKeyDown)
         {
+            Music.inMenu = false;
+            StartCoroutine(AudioFadeScript.FadeOut(Music.Menu, 0.8f));
+            StartCoroutine(AudioFadeScript.FadeIn(Music.BigCarTheft, 8f));
             player.Begin();
         }
     }
