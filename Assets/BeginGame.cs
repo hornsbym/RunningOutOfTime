@@ -1,4 +1,5 @@
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class BeginGame : MonoBehaviour
@@ -13,10 +14,7 @@ public class BeginGame : MonoBehaviour
         if (Input.anyKeyDown)
         {
             Music.inMenu = false;
-            Music.Menu.Stop();
-            // Music.BigCarTheft.Play();
-            // StartCoroutine(AudioFadeScript.FadeOut(Music.Menu, 0.8f));
-            StartCoroutine(AudioFadeScript.FadeIn(Music.BigCarTheft, 8f));
+            Music.PostMenu();
             player.Begin();
         }
     }
