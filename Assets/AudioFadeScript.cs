@@ -7,7 +7,6 @@ public class AudioFadeScript : MonoBehaviour
     public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
     {
         float startVolume = audioSource.volume;
-
         while (audioSource.volume > 0)
         {
             audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
@@ -22,7 +21,6 @@ public class AudioFadeScript : MonoBehaviour
     public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime)
     {
         float startVolume = 0.2f;
-
         audioSource.volume = 0;
         audioSource.Play();
 
