@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class playMusic : MonoBehaviour
 {
-    private float playSong = 120;
+    private float playSong = 30;
     private float timePassed = 0;
     private float loops = 0;
     private bool inMenu = false;

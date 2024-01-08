@@ -33,6 +33,6 @@ public class AudioFadeScript : MonoBehaviour
             yield return null;
         }
 
-        audioSource.volume = 1f;
+        audioSource.volume = 0.75f;
     }
 }
