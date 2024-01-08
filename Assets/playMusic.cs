@@ -17,10 +17,13 @@ public class playMusic : MonoBehaviour
     public AudioSource BigCarTheft;
     public AudioSource Void;
     // Start is called before the first frame update
-    void Start()
+    public void PostMenu()
     {
- 
+        StartCoroutine(AudioFadeScript.FadeOut(Menu, 0.8f));
+        StartCoroutine(AudioFadeScript.FadeIn(BigCarTheft, 8f));
     }
+
+
 
     // Update is called once per frame
     void Update()
