@@ -34,7 +34,11 @@ public class Respawn : MonoBehaviour
     GameObject startGameUI;
 
     [SerializeField]
-    Collider2D enemyCollisionDetector;
+    Collider2D runningEnemyCollisionDetector;
+
+    
+    [SerializeField]
+    Collider2D rollingEnemyCollisionDetector;
 
     [SerializeField]
     Animator anim;
@@ -90,7 +94,8 @@ public class Respawn : MonoBehaviour
         Vector2 currentPosition = gameObject.transform.position;
         gameObject.transform.position = new Vector2(currentPosition.x, 10);
         isInvincible = true;
-        enemyCollisionDetector.enabled = false;
+        runningEnemyCollisionDetector.enabled = false;
+        rollingEnemyCollisionDetector.enabled = false;
         anim.SetBool("isInvincible", true);
         StartCoroutine(resetInvincibility(invincibilityDelay));
     }
@@ -99,7 +104,8 @@ public class Respawn : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         isInvincible = false;
-        enemyCollisionDetector.enabled = true;
+        runningEnemyCollisionDetector.enabled = true;
+        rollingEnemyCollisionDetector.enabled = true;        
         anim.SetBool("isInvincible", false);
     }
 }

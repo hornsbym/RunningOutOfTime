@@ -603,6 +603,18 @@ PrefabInstance:
       propertyPath: loseLifeSound
       value: 
       objectReference: {fileID: 2027299455}
+    - target: {fileID: 5405699274738051480, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
+      propertyPath: rollingEnemyCollisionDetector
+      value: 
+      objectReference: {fileID: 1914248844}
+    - target: {fileID: 5405699274738051480, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
+      propertyPath: runningEnemyCollisionDetector
+      value: 
+      objectReference: {fileID: 1914248849}
+    - target: {fileID: 6302398229359276199, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 2027299448}
     - target: {fileID: 8703409087191921359, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
       propertyPath: m_Name
       value: PlayerChar
@@ -834,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7535117425463825488, guid: 2d725007c61df3844a5de2f7827d45d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7535117425463825488, guid: 2d725007c61df3844a5de2f7827d45d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -946,6 +958,16 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3772050191709791976, guid: 9b4055c253ec266429579fcb6855685b, type: 3}
   m_PrefabInstance: {fileID: 4735600664926572188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1914248844 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3919187944534253739, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
+  m_PrefabInstance: {fileID: 975668427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1914248849 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 9017062014874572123, guid: 52ff481302c9dfb4eb657b797d9e33e8, type: 3}
+  m_PrefabInstance: {fileID: 975668427}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2027299446 stripped
 GameObject:
