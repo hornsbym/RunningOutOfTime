@@ -13,7 +13,9 @@ public class BeginGame : MonoBehaviour
         if (Input.anyKeyDown)
         {
             Music.inMenu = false;
-            StartCoroutine(AudioFadeScript.FadeOut(Music.Menu, 0.8f));
+            Music.Menu.Stop();
+            // Music.BigCarTheft.Play();
+            // StartCoroutine(AudioFadeScript.FadeOut(Music.Menu, 0.8f));
             StartCoroutine(AudioFadeScript.FadeIn(Music.BigCarTheft, 8f));
             player.Begin();
         }
