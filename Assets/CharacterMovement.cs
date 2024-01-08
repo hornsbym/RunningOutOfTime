@@ -8,7 +8,7 @@ public class CharacterMovement : MonoBehaviour
     public float speed;
 
     [SerializeField]
-    private float jumpForce;
+    float jumpForce;
 
     [SerializeField]
     private Animator anim;
@@ -17,7 +17,13 @@ public class CharacterMovement : MonoBehaviour
     public AudioSource jumpSound;
 
     [SerializeField]
-    private Rigidbody2D rb;
+    Rigidbody2D rb;
+
+    [SerializeField]
+    Collider2D runningEnemyDetectHitbox;
+
+    [SerializeField]
+    Collider2D rollingEnemyDetectHitbox;
 
     public CharacterMovementStates state;
 
@@ -25,7 +31,8 @@ public class CharacterMovement : MonoBehaviour
     private Vector2 prevPos;
 
     [field: SerializeField]
-    public bool isGameStarted {
+    public bool isGameStarted
+    {
         get;
         private set;
     }
@@ -48,7 +55,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (!isGameStarted)
         {
-            anim.SetInteger("state", (int) state);
+            anim.SetInteger("state", (int)state);
             return;
         }
 
@@ -66,7 +73,7 @@ public class CharacterMovement : MonoBehaviour
             // Rising
             state = CharacterMovementStates.RISING;
         }
-        else 
+        else
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -90,6 +97,18 @@ public class CharacterMovement : MonoBehaviour
                 }
             }
         }
+
+        if (state == CharacterMovementStates.ROLLING)
+        {
+            rollingEnemyDetectHitbox.enabled = true;
+            runningEnemyDetectHitbox.enabled = false;
+        }
+        else
+        {
+            rollingEnemyDetectHitbox.enabled = false;
+            runningEnemyDetectHitbox.enabled = true;
+        }
+
         prevPos = transform.position;
         anim.SetInteger("state", (int)state);
     }
