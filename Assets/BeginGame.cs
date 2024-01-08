@@ -16,7 +16,7 @@ public class BeginGame : MonoBehaviour
             Music.Menu.Stop();
             // Music.BigCarTheft.Play();
             // StartCoroutine(AudioFadeScript.FadeOut(Music.Menu, 0.8f));
-            StartCoroutine(AudioFadeScript.FadeIn(Music.BigCarTheft, 8f));
+            StartCoroutine(AudioFadeScript.FadeIn(Music.Menu, 8f));
             player.Begin();
         }
     }
